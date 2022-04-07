@@ -1,0 +1,43 @@
+@import-normalize; /* bring in normalize.css styles */
+
+/* make the customizations */
+$theme-colors: (
+    "primary": #61dafb,
+    "danger": teal
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
+
+.app {
+  text-align: center;
+  background: transparent url(./images/hero-bg.svg) 0 0 / 100% auto no-repeat;
+
+  @media (min-width: 768px) {
+   background-position: 0 -13vw; 
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a:not(.btn),
+.app-link:not(.btn) {
+  color: #61dafb;
+}
+
+.btn {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
