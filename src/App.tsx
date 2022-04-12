@@ -3,12 +3,17 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-
 import React from "react";
+// import { Provider } from "mobx-react";
+
+//pages
 import HomePage from "./pages/home";
 import PostPage from "./pages/post";
+//context
 import AppContext from "./app-context";
+//store
 import AppStore from "./stores/app";
+//api
 import AppApi from "./apis/app";
 
 const store = new AppStore();

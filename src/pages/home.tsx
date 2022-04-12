@@ -33,6 +33,7 @@ const HomePage = observer(() => {
       <Header />
       <section className="post-list container">
         <ul className="post-list__list">
+
           {store.post.all.map((post, i) => (
             <li key={i} className="post-list__list-item">
               <Post
@@ -40,6 +41,7 @@ const HomePage = observer(() => {
               />
             </li>
           ))}
+          
         </ul>
       </section>
     </div>
